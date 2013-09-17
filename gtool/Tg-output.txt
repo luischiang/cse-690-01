@@ -1,0 +1,29 @@
+in loop 1
+Mapping file: /home/openflow/advpro/net-tunnel/gtool/mapping.txt
+10.1.0.1-10.1.255.255-Tg-eth0-
+10.2.0.1-10.2.255.255-Tg-eth1-
+10.3.0.1-10.3.255.255-Tg-eth2-
+10.4.0.1-10.4.255.255-Tg-eth3-
+10.5.0.1-10.5.255.255-Tg-eth4-
+10.6.0.1-10.6.255.255-Tg-eth5-
+10.7.0.1-10.7.255.255-Tg-eth6-
+10.8.0.1-10.8.255.255-Tg-eth7-
+10.9.0.1-10.9.255.255-Tg-eth8-
+10.10.0.1-10.10.255.255-Tg-eth9-
+10.11.0.1-10.11.255.255-Tg-eth10-
+The mapping contains 11 lines
+Opening device Tg-eth0 .. 167837697 167903231 
+Opening device Tg-eth1 .. 167903233 167968767 
+Opening device Tg-eth2 .. 167968769 168034303 
+Opening device Tg-eth3 .. 168034305 168099839 
+Opening device Tg-eth4 .. 168099841 168165375 
+Opening device Tg-eth5 .. 168165377 168230911 
+Opening device Tg-eth6 .. 168230913 168296447 
+Opening device Tg-eth7 .. 168296449 168361983 
+Opening device Tg-eth8 .. 168361985 168427519 
+Opening device Tg-eth9 .. 168427521 168493055 
+Opening device Tg-eth10 .. 168493057 168558591 
+trace file: /home/openflow/advpro/net-tunnel/gtool/exp2.pcap
+
+256086 packets (97460978 bytes) sent
+Elapsed time = 2.668722 seconds

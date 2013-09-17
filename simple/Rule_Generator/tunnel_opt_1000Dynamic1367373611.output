@@ -1,0 +1,10 @@
+Tried aggregator 1 time.
+MIP Presolve eliminated 23 rows and 12 columns.
+Reduced MIP has 13 rows, 18 columns, and 63 nonzeros.
+Reduced MIP has 0 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Probing time =    0.00 sec.
+Presolve time =    0.00 sec.
+Solution status 103.
+CPLEX Error  1217: No solution exists.
+
+Elapsed time : 0.000 

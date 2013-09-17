@@ -1,0 +1,6 @@
+TOPOLOGY Topology_Dynamic
+POLICY PolicyChains_Dynamic
+MBOXES MboxInventory_Dynamic
+SWITCHES SwitchInventory_Dynamic
+LINKS LinkCaps_Dynamic
+MAXMBOXLOAD 2

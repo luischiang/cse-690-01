@@ -1,0 +1,12 @@
+Tried aggregator 1 time.
+LP Presolve eliminated 5 rows and 0 columns.
+Reduced LP has 13 rows, 18 columns, and 63 nonzeros.
+Presolve time =    0.06 sec.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.000000
+Iteration:     3   Dual objective     =           150.000000
+Model is infeasible
+
+Elapsed time : 0.000 

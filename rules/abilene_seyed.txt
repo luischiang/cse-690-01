@@ -1,0 +1,12 @@
+Switch 00-00-00-00-00-01:
+dl_type=0x0800, in_port=3, nw_src=11.0.1.2, nw_dst=11.0.3.2, nw_proto=17, actions=output:1
+dl_type=0x0800, in_port=1, nw_src=11.0.3.2, nw_dst=11.0.1.2, nw_proto=17, actions=mod_dl_dst:00:00:00:00:00:01, output:3
+
+Switch 00-00-00-00-00-02:
+dl_type=0x0800, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.3.2, nw_proto=17, actions=mod_dl_dst:00:00:00:00:00:06, output:4
+dl_type=0x0800, in_port=4, nw_src=11.0.1.2, nw_dst=11.0.3.2, nw_proto=17, actions=output:2
+dl_type=0x0800, in_port=2, nw_src=11.0.3.2, nw_dst=11.0.1.2, nw_proto=17, actions=output:1
+
+Switch 00-00-00-00-00-03:
+dl_type=0x0800, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.3.2, nw_proto=17, actions=mod_dl_dst:00:00:00:00:00:03, output:3
+dl_type=0x0800, in_port=3, nw_src=11.0.3.2, nw_dst=11.0.1.2, nw_proto=17, actions=output:1

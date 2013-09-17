@@ -1,0 +1,40 @@
+Switch 00-00-00-00-00-01:
+#local delivery
+dl_type=0x0800, priority=1, nw_dst=10.1.0.1/16, actions=output:3
+dl_type=0x0800, priority=1, nw_dst=11.0.1.2/24, actions=mod_dl_src:1a:2a:3a:1a:2a:3a, mod_dl_dst:00:00:00:00:00:01, output:2
+#forward
+dl_type=0x0800, priority=1, nw_dst=10.2.0.1/16, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=10.3.0.1/16, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=10.4.0.1/16, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=11.0.2.2/24, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=11.0.3.2/24, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=11.0.4.2/24, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=11.0.5.2/24, actions=output:1
+
+dl_type=0x0800, priority=1, nw_dst=13.0.1.2/24, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=13.0.2.2/24, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=13.0.7.2/24, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=13.0.5.2/24, actions=output:1
+
+Switch 00-00-00-00-00-02:
+#local delivery
+dl_type=0x0800, priority=1, nw_dst=10.2.0.1/16, actions=output:4
+dl_type=0x0800, priority=1, nw_dst=11.0.2.2/24, actions=mod_dl_src:1a:2a:3a:1a:2a:3a, mod_dl_dst:00:00:00:00:00:02, output:3
+dl_type=0x0800, priority=1, nw_dst=13.0.2.2/24, actions=mod_dl_src:1a:2a:3a:1a:2a:3a, mod_dl_dst:00:00:00:00:00:02, output:5
+dl_type=0x0800, priority=1, nw_dst=13.0.1.2/24, actions=mod_dl_src:1a:2a:3a:1a:2a:3a, mod_dl_dst:00:00:00:00:00:01, output:6
+#forward
+dl_type=0x0800, priority=1, nw_dst=10.1.0.1/16, actions=output:1
+dl_type=0x0800, priority=1, nw_dst=11.0.1.2/24, actions=output:1
+
+Switch 00-00-00-00-00-03:
+#local delivery
+dl_type=0x0800, priority=1, nw_dst=10.3.0.1/16, actions=output:3
+dl_type=0x0800, priority=1, nw_dst=13.0.7.2/24, actions=mod_dl_src:1a:2a:3a:1a:2a:3a, mod_dl_dst:00:00:00:00:00:07, output:4
+
+Switch 00-00-00-00-00-04:
+#local delivery
+dl_type=0x0800, priority=1, nw_dst=10.4.0.1/16, actions=output:5
+dl_type=0x0800, priority=1, nw_dst=11.0.3.2/24, actions=mod_dl_src:1a:2a:3a:1a:2a:3a, mod_dl_dst:00:00:11:00:00:03, output:2
+dl_type=0x0800, priority=1, nw_dst=11.0.4.2/24, actions=mod_dl_src:1a:2a:3a:1a:2a:3a, mod_dl_dst:00:00:11:00:00:04, output:3
+dl_type=0x0800, priority=1, nw_dst=11.0.5.2/24, actions=mod_dl_src:1a:2a:3a:1a:2a:3a, mod_dl_dst:00:00:11:00:00:05, output:4
+dl_type=0x0800, priority=1, nw_dst=13.0.5.2/24, actions=mod_dl_src:1a:2a:3a:1a:2a:3a, mod_dl_dst:00:00:00:00:00:07, output:6

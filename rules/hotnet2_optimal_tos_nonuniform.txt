@@ -1,0 +1,47 @@
+Switch 00-00-00-00-00-01: 
+dl_type=0x0800, dl_src=00:00:00:00:00:01, dl_dst=00:00:12:00:01:01, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:4, mod_dl_src:00:00:12:00:01:03, mod_dl_dst:00:00:12:00:03:01, output:3
+dl_type=0x0800, dl_src=00:00:12:00:03:01, dl_dst=00:00:12:00:01:03, nw_tos=236, in_port=3, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:240, mod_dl_src:00:00:12:00:01:01, mod_dl_dst:00:00:00:00:00:01, output:1
+dl_type=0x0800, dl_src=00:00:00:00:00:01, dl_dst=00:00:12:00:01:01, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:4, mod_dl_src:00:00:12:00:01:02, mod_dl_dst:00:00:12:00:02:01, output:2
+dl_type=0x0800, dl_src=00:00:12:00:02:01, dl_dst=00:00:12:00:01:02, nw_tos=236, in_port=2, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:240, mod_dl_src:00:00:12:00:01:01, mod_dl_dst:00:00:00:00:00:01, output:1
+
+Switch 00-00-00-00-00-02: 
+dl_type=0x0800, dl_src=00:00:12:00:04:01, dl_dst=00:00:12:00:02:04, nw_tos=24, in_port=4, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:28, mod_dl_src:00:00:12:00:02:03, mod_dl_dst:00:00:00:00:00:04, output:3
+dl_type=0x0800, dl_src=00:00:00:00:00:04, dl_dst=00:00:12:00:02:03, nw_tos=212, in_port=3, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:216, mod_dl_src:00:00:12:00:02:04, mod_dl_dst:00:00:12:00:04:01, output:4
+dl_type=0x0800, dl_src=00:00:00:00:00:04, dl_dst=00:00:12:00:02:03, nw_tos=28, in_port=3, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:32, mod_dl_src:00:00:12:00:02:04, mod_dl_dst:00:00:12:00:04:01, output:4
+dl_type=0x0800, dl_src=00:00:12:00:04:01, dl_dst=00:00:12:00:02:04, nw_tos=208, in_port=4, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:212, mod_dl_src:00:00:12:00:02:03, mod_dl_dst:00:00:00:00:00:04, output:3
+dl_type=0x0800, dl_src=00:00:12:00:01:02, dl_dst=00:00:12:00:02:01, nw_tos=4, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:8, mod_dl_src:00:00:12:00:02:02, mod_dl_dst:00:00:00:00:00:03, output:2
+dl_type=0x0800, dl_src=00:00:00:00:00:03, dl_dst=00:00:12:00:02:02, nw_tos=232, in_port=2, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:236, mod_dl_src:00:00:12:00:02:01, mod_dl_dst:00:00:12:00:01:02, output:1
+dl_type=0x0800, dl_src=00:00:00:00:00:03, dl_dst=00:00:12:00:02:02, nw_tos=8, in_port=2, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:12, mod_dl_src:00:00:12:00:02:04, mod_dl_dst:00:00:12:00:04:01, output:4
+dl_type=0x0800, dl_src=00:00:12:00:04:01, dl_dst=00:00:12:00:02:04, nw_tos=228, in_port=4, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:232, mod_dl_src:00:00:12:00:02:02, mod_dl_dst:00:00:00:00:00:03, output:2
+
+Switch 00-00-00-00-00-03: 
+dl_type=0x0800, dl_src=00:00:12:00:01:03, dl_dst=00:00:12:00:03:01, nw_tos=4, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:8, mod_dl_src:00:00:12:00:03:02, mod_dl_dst:00:00:00:00:00:05, output:2
+dl_type=0x0800, dl_src=00:00:00:00:00:05, dl_dst=00:00:12:00:03:02, nw_tos=232, in_port=2, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:236, mod_dl_src:00:00:12:00:03:01, mod_dl_dst:00:00:12:00:01:03, output:1
+dl_type=0x0800, dl_src=00:00:00:00:00:05, dl_dst=00:00:12:00:03:02, nw_tos=8, in_port=2, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:12, mod_dl_src:00:00:12:00:03:03, mod_dl_dst:00:00:12:00:05:02, output:3
+dl_type=0x0800, dl_src=00:00:12:00:05:02, dl_dst=00:00:12:00:03:03, nw_tos=228, in_port=3, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:232, mod_dl_src:00:00:12:00:03:02, mod_dl_dst:00:00:00:00:00:05, output:2
+
+Switch 00-00-00-00-00-04: 
+dl_type=0x0800, dl_src=00:00:12:00:05:01, dl_dst=00:00:12:00:04:02, nw_tos=20, in_port=2, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:24, mod_dl_src:00:00:12:00:04:01, mod_dl_dst:00:00:12:00:02:04, output:1
+dl_type=0x0800, dl_src=00:00:12:00:02:04, dl_dst=00:00:12:00:04:01, nw_tos=216, in_port=1, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:220, mod_dl_src:00:00:12:00:04:02, mod_dl_dst:00:00:12:00:05:01, output:2
+dl_type=0x0800, dl_src=00:00:12:00:02:04, dl_dst=00:00:12:00:04:01, nw_tos=32, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:36, mod_dl_src:00:00:12:00:04:02, mod_dl_dst:00:00:12:00:05:01, output:2
+dl_type=0x0800, dl_src=00:00:12:00:05:01, dl_dst=00:00:12:00:04:02, nw_tos=204, in_port=2, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:208, mod_dl_src:00:00:12:00:04:01, mod_dl_dst:00:00:12:00:02:04, output:1
+dl_type=0x0800, dl_src=00:00:12:00:02:04, dl_dst=00:00:12:00:04:01, nw_tos=12, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:16, mod_dl_src:00:00:12:00:04:02, mod_dl_dst:00:00:12:00:05:01, output:2
+dl_type=0x0800, dl_src=00:00:12:00:05:01, dl_dst=00:00:12:00:04:02, nw_tos=224, in_port=2, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:228, mod_dl_src:00:00:12:00:04:01, mod_dl_dst:00:00:12:00:02:04, output:1
+
+Switch 00-00-00-00-00-05: 
+dl_type=0x0800, dl_src=00:00:12:00:03:03, dl_dst=00:00:12:00:05:02, nw_tos=12, in_port=2, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:16, mod_dl_src:00:00:12:00:05:03, mod_dl_dst:00:00:00:00:00:06, output:3
+dl_type=0x0800, dl_src=00:00:00:00:00:06, dl_dst=00:00:12:00:05:03, nw_tos=224, in_port=3, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:228, mod_dl_src:00:00:12:00:05:02, mod_dl_dst:00:00:12:00:03:03, output:2
+dl_type=0x0800, dl_src=00:00:00:00:00:06, dl_dst=00:00:12:00:05:03, nw_tos=16, in_port=3, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:20, mod_dl_src:00:00:12:00:05:01, mod_dl_dst:00:00:12:00:04:02, output:1
+dl_type=0x0800, dl_src=00:00:12:00:04:02, dl_dst=00:00:12:00:05:01, nw_tos=220, in_port=1, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:224, mod_dl_src:00:00:12:00:05:03, mod_dl_dst:00:00:00:00:00:06, output:3
+dl_type=0x0800, dl_src=00:00:12:00:04:02, dl_dst=00:00:12:00:05:01, nw_tos=36, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:40, mod_dl_src:00:00:12:00:05:04, mod_dl_dst:00:00:12:00:06:01, output:4
+dl_type=0x0800, dl_src=00:00:12:00:06:01, dl_dst=00:00:12:00:05:04, nw_tos=200, in_port=4, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:204, mod_dl_src:00:00:12:00:05:01, mod_dl_dst:00:00:12:00:04:02, output:1
+dl_type=0x0800, dl_src=00:00:12:00:04:02, dl_dst=00:00:12:00:05:01, nw_tos=16, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:20, mod_dl_src:00:00:12:00:05:03, mod_dl_dst:00:00:00:00:00:06, output:3
+dl_type=0x0800, dl_src=00:00:00:00:00:06, dl_dst=00:00:12:00:05:03, nw_tos=220, in_port=3, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:224, mod_dl_src:00:00:12:00:05:01, mod_dl_dst:00:00:12:00:04:02, output:1
+dl_type=0x0800, dl_src=00:00:00:00:00:06, dl_dst=00:00:12:00:05:03, nw_tos=20, in_port=3, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:24, mod_dl_src:00:00:12:00:05:04, mod_dl_dst:00:00:12:00:06:01, output:4
+dl_type=0x0800, dl_src=00:00:12:00:06:01, dl_dst=00:00:12:00:05:04, nw_tos=216, in_port=4, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:220, mod_dl_src:00:00:12:00:05:03, mod_dl_dst:00:00:00:00:00:06, output:3
+
+Switch 00-00-00-00-00-06: 
+dl_type=0x0800, dl_src=00:00:12:00:05:04, dl_dst=00:00:12:00:06:01, nw_tos=40, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:44, mod_dl_src:00:00:12:00:06:02, mod_dl_dst:00:00:00:00:00:02, output:2
+dl_type=0x0800, dl_src=00:00:00:00:00:02, dl_dst=00:00:12:00:06:02, in_port=2, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5001, actions=mod_nw_tos:200, mod_dl_src:00:00:12:00:06:01, mod_dl_dst:00:00:12:00:05:04, output:1
+dl_type=0x0800, dl_src=00:00:12:00:05:04, dl_dst=00:00:12:00:06:01, nw_tos=24, in_port=1, nw_src=11.0.1.2, nw_dst=11.0.2.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:28, mod_dl_src:00:00:12:00:06:02, mod_dl_dst:00:00:00:00:00:02, output:2
+dl_type=0x0800, dl_src=00:00:00:00:00:02, dl_dst=00:00:12:00:06:02, in_port=2, nw_src=11.0.2.2, nw_dst=11.0.1.2, nw_proto=17, tp_dst=5002, actions=mod_nw_tos:216, mod_dl_src:00:00:12:00:06:01, mod_dl_dst:00:00:12:00:05:04, output:1

@@ -1,0 +1,11 @@
+c1
+S1 lo:  S1-eth1:S2-eth1 S1-eth2:H1-eth0 S1-eth3:Tg-eth0
+S2 lo:  S2-eth1:S1-eth1 S2-eth2:S3-eth1 S2-eth3:H2-eth0 S2-eth4:Tg-eth1
+S3 lo:  S3-eth1:S2-eth2 S3-eth2:S4-eth1 S3-eth3:Tg-eth2
+S4 lo:  S4-eth1:S3-eth2 S4-eth2:H3-eth0 S4-eth3:H4-eth0 S4-eth4:H5-eth0 S4-eth5:Tg-eth3
+H1 H1-eth0:S1-eth2
+H2 H2-eth0:S2-eth3
+H3 H3-eth0:S4-eth2
+H4 H4-eth0:S4-eth3
+H5 H5-eth0:S4-eth4
+Tg Tg-eth0:S1-eth3 Tg-eth1:S2-eth4 Tg-eth2:S3-eth3 Tg-eth3:S4-eth5
